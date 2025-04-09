@@ -1,5 +1,6 @@
 from email_monitor import find_matching_email
 from web_automation import open_browser_and_claim
+from config import RUN_EVERY_SECONDS
 import time
 
 def main():
@@ -14,4 +15,4 @@ def main():
 if __name__ == "__main__":
     while True:
         main()
-        time.sleep(60)  # Check every 60 seconds
+        time.sleep(RUN_EVERY_SECONDS)  # Check every 60 seconds
